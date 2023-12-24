@@ -33,6 +33,10 @@ app.use((obj, req, res, next)=>{
     });
 });
 
+app.use('/', (req, res) => {
+    res.send('Hello from Express middleware\n');
+  });
+
 
 
 //DB Connection
